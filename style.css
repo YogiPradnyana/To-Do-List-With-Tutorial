@@ -23,3 +23,7 @@
 .subtittle {
   font-weight: 600;
 }
+
+.done {
+  text-decoration: line-through;
+}
