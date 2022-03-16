@@ -27,3 +27,7 @@
 .done {
   text-decoration: line-through;
 }
+
+.ketika-hover {
+  cursor: pointer;
+}

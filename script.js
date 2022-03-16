@@ -7,7 +7,7 @@ function add() {
   // 1. Mengambil nilai dari teksnya
   let newText = document.getElementById('new_text');
   // 2. Tambahkan list baru pada ul
-  let newTodo = "<li> <span onclick='toggle(this)'>" + newText.value + '</span>' + '<span> [x] </span>' + ' </li>';
+  let newTodo = "<li class='ketika-hover'> <span onclick='toggle(this)'>" + newText.value + '</span>' + "<span onclick='removeBtn(this)'> [x] </span>" + ' </li>';
   todo.insertAdjacentHTML('afterbegin', newTodo);
   // 3. Kosongkan fieldnya
   newText.value = '';
@@ -15,4 +15,8 @@ function add() {
 
 function toggle(el) {
   el.classList.toggle('done');
+}
+
+function removeBtn(el) {
+  el.parentElement.remove();
 }
